@@ -419,7 +419,7 @@
 \newcount\boxwidth\boxwidth=15
 \newcount\boxheight\boxheight=9
 
-\def\stretchattributes#1#2#3#4{%
+\def\stretchattributes#1#2#3#4#5{%
 \newcount\xcount
 \xcount=#1
 \newcount\stretchcount
@@ -445,7 +445,7 @@
   \fi
   \tmpcount=\xcount
   \advance\tmpcount by \number\pluscount
-  \put(\tmpcount,#2){\framebox(\boxwidth,\boxheight){\tmp}}
+  \put(\tmpcount,#2){\colorbox{#5!10}{\framebox(\boxwidth,\boxheight){\tmp}}}
   \ifnum\number\pluscount=0
   \advance\xcount by \boxwidth
   \else
@@ -714,12 +714,13 @@
 \newcommand\classskillbox[1]{
   \ifthenelse{\value{#1} = 1}{$\cancel{\square}$}{$\square$}
 }
+
 \newcommand\skill[8]{
-  \put(#2,#3){
+  \put(#2,#3){\colorbox{red!10}{
   \begin{tabular}[b]{A{10}B{100}A{14}B{20}A{14}A{8}A{14}A{8}A{14}}
     \classskillbox{#1} &  #4 & \skillcalculate{#5}{#6}{#7}{#8}
   \end{tabular}}
-}
+}}
 % \newcommand\classskill[7]{
 %   \put(#1,#2){
 %   \begin{tabular}[b]{A{10}B{100}A{14}B{20}A{14}A{8}A{14}A{8}A{14}}
@@ -728,11 +729,11 @@
 % }
 
 \newcommand\trainskill[8]{
-  \put(#2,#3){
+  \put(#2,#3){\colorbox{red!10}{
   \begin{tabular}[b]{A{10}B{100}A{14}B{20}A{14}A{8}A{14}A{8}A{14}}
     \classskillbox{#1} &  #4* & \skillcalculate{#5}{#6}{#7}{#8}
   \end{tabular}}
-}
+}}
 
 
 \newcommand\lfont{\fontsize{4}{4}\selectfont\scshape}

@@ -1,3 +1,4 @@
+% !TeX root = pfrpg_char_sheet.tex
 \documentclass{rpgcharsheet}
 
 \begin{document}
@@ -27,29 +28,29 @@
   \stretchlabels{33}{512}{102}{ability score,  ability modifier, Temp Adjustment, Temp Modifier}
   %% STR
   \titlebox{0}{500}{28}{STR}{strength}
-\stretchattributes{33}{500}{102}{\arabic{charstrcount},\plusminus{charstrmodcount},\plusminus{charstrtmpadjcount},\plusminus{charstrtmpmodcount}}
+  \stretchattributes{33}{500}{102}{\arabic{charstrcount},\plusminus{charstrmodcount},\plusminus{charstrtmpadjcount},\plusminus{charstrtmpmodcount}}{red}
 
   %% DEX
   \titlebox{0}{488}{28}{DEX}{dexterity}
-  \stretchattributes{33}{488}{102}{\arabic{chardexcount},\plusminus{chardexmodcount},\plusminus{chardextmpadjcount},\plusminus{chardextmpmodcount}}
+  \stretchattributes{33}{488}{102}{\arabic{chardexcount},\plusminus{chardexmodcount},\plusminus{chardextmpadjcount},\plusminus{chardextmpmodcount}}{red}
   
   %% CON
   \titlebox{0}{476}{28}{CON}{constitution}
-  \stretchattributes{33}{476}{102}{\arabic{charconcount},\plusminus{charconmodcount},\plusminus{charcontmpadjcount},\plusminus{charcontmpmodcount}}
+  \stretchattributes{33}{476}{102}{\arabic{charconcount},\plusminus{charconmodcount},\plusminus{charcontmpadjcount},\plusminus{charcontmpmodcount}}{red}
   
   %% INT
   \titlebox{0}{464}{28}{INT}{intelligence}
-  \stretchattributes{33}{464}{102}{\arabic{charintcount},\plusminus{charintmodcount},\plusminus{charinttmpadjcount},\plusminus{charinttmpmodcount}}
+  \stretchattributes{33}{464}{102}{\arabic{charintcount},\plusminus{charintmodcount},\plusminus{charinttmpadjcount},\plusminus{charinttmpmodcount}}{red}
 
   %% WIS
   \titlebox{0}{452}{28}{WIS}{wisdom}
-  \stretchattributes{33}{452}{102}{\arabic{charwiscount},\plusminus{charwismodcount},\plusminus{charwistmpadjcount},\plusminus{charwistmpmodcount}}
+  \stretchattributes{33}{452}{102}{\arabic{charwiscount},\plusminus{charwismodcount},\plusminus{charwistmpadjcount},\plusminus{charwistmpmodcount}}{red}
 
   %% CHA
   \titlebox{0}{440}{28}{CHA}{charisma}
-  \stretchattributes{33}{440}{102}{\arabic{charchacount},\plusminus{charchamodcount},\plusminus{charchatmpadjcount},\plusminus{charchatmpmodcount}}
+  \stretchattributes{33}{440}{102}{\arabic{charchacount},\plusminus{charchamodcount},\plusminus{charchatmpadjcount},\plusminus{charchatmpmodcount}}{red}
 
-
+  
   %% HP
   \singletitlebox{107}{505}{26}{12}{HP}
   % \put(107,505){\framebox(26,12){}}
@@ -217,7 +218,7 @@
 
   %% TODO change this bit so that it can take much more than triple digits for money. Also, hook up the money to a weight.
   \stretchlabels{35}{10}{100}{PP, GP, SP, CP}
-  \singletitlebox{0}{0}{30}{9}{Money}  \stretchattributes{35}{0}{100}{\arabic{charplatinumcount},\arabic{chargoldcount},\arabic{charsilvercount},\arabic{charcoppercount}}
+  \singletitlebox{0}{0}{30}{9}{Money}  \stretchattributes{35}{0}{100}{\arabic{charplatinumcount},\arabic{chargoldcount},\arabic{charsilvercount},\arabic{charcoppercount}}{white}
 \end{picture}
 
 \end{document}
